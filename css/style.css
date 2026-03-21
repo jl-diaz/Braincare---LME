@@ -63,7 +63,6 @@ body {
 @media (max-width: 992px) { .menu-toggle { display: inline-flex; } .nav { display: none !important; } }
 
 .auth-body {
-    background-image: url('../img/Bosque1.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

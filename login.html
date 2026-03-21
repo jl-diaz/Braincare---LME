@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainCare - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/site-header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="auth-body">
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html"><span>Braincare</span></a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav"><i class="fa-solid fa-bars"></i></button>
+            <nav id="siteNav" class="nav">
+                <ul class="nav-left">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Información</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="articulos.html"><i class="fas fa-book-open"></i> Artículos</a>
+                            <a class="dropdown-item" href="guias.html"><i class="fas fa-book"></i> Guías</a>
+                            <a class="dropdown-item" href="sobre-nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a class="nav-link" href="registro.html">Registrarse</a></li>
+                    <li><a class="nav-link" href="index.html">Volver al inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobilePanel" class="mobile-panel">
+        <div class="mobile-links">
+        </div>
+    </div>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-card-body">
+                <h2 class="auth-title">Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <div class="auth-form-group">
+                        <input type="email" id="email" class="auth-input" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="auth-form-group" style="position: relative;">
+                        <input type="password" id="password" class="auth-input" placeholder="Contraseña" required>
+                        <span class="password-toggle" onclick="togglePassword('password')" style="position: absolute; right: 15px; top: 15px; cursor: pointer;">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                    <div class="auth-button-container">
+                        <button type="submit" class="auth-button">Iniciar Sesión</button>
+                    </div>
+                </form>
+                <div class="auth-links">
+                    <p>¿No tienes una cuenta? <a href="registro.html" style="color: var(--primary); font-weight: bold;">Registrarse</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

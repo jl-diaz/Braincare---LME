@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainCare - Artículos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-footer.css">
+    <link rel="stylesheet" href="./css/site-header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="index.html"><span>Braincare</span></a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav"><i class="fa-solid fa-bars"></i></button>
+            <nav id="siteNav" class="nav">
+                <ul class="nav-left">
+                    <li><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Información</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="articulos.html"><i class="fas fa-book-open"></i> Artículos</a>
+                            <a class="dropdown-item" href="guias.html"><i class="fas fa-book"></i> Guías</a>
+                            <a class="dropdown-item" href="sobre-nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobilePanel" class="mobile-panel">
+        <div class="mobile-links">
+        </div>
+    </div>
+
+    <div class="InicioArticulos">
+        <div class="container">
+            <h1 class="guides-header-title">Artículos</h1>
+            <p class="lead">La Psicología es la ciencia que estudia la conducta humana, así como los procesos mentales y, en general, todo lo relativo a la experiencia humana. Explora conceptos como la percepción, la motivación, la personalidad y la inteligencia.</p>
+        </div>
+    </div>
+
+    <div class="public-top-search">
+        <label class="articles-filter-label"><i class="fas fa-search"></i> Buscar Artículos</label>
+        <input type="text" id="articlesPublicSearchInput" class="articles-filter-input" placeholder="Buscar por título o autor..." />
+    </div>
+
+    <div class="container mt-5">
+        <div class="layout-principal">
+            <div class="columna-articulos">
+                <div id="articlesContainer" class="articles-container">
+                    <!-- Artículo 1 -->
+                    <div class="article-card" data-topic="Recomendaciones" data-views="1240" data-date="2024-03-15">
+                        <img src="img/Autoestima.jpg" class="article-image" alt="Autoestima">
+                        <div class="article-info">
+                            <div>
+                                <div class="infoImport">
+                                    <span class="article-topic">Recomendaciones</span>
+                                    <span class="article-date"><i class="far fa-calendar-alt"></i> 15/03/2026</span>
+                                </div>
+                                <a href="#" class="article-link">
+                                    <h2 class="article-title">Cómo mejorar tu autoestima</h2>
+                                </a>
+                                <div class="article-meta">
+                                    <span class="article-author">Por <strong>Equipo BrainCare</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artículo 2 -->
+                    <div class="article-card" data-topic="Tratamientos" data-views="850" data-date="2024-03-10">
+                        <img src="img/Ansiedad.jpeg" class="article-image" alt="Ansiedad">
+                        <div class="article-info">
+                            <div>
+                                <div class="infoImport">
+                                    <span class="article-topic">Tratamientos</span>
+                                    <span class="article-date"><i class="far fa-calendar-alt"></i> 10/03/2026</span>
+                                </div>
+                                <a href="#" class="article-link">
+                                    <h2 class="article-title">Manejo de la ansiedad en el día a día</h2>
+                                </a>
+                                <div class="article-meta">
+                                    <span class="article-author">Por <strong>Dr. Smith</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artículo 3 -->
+                    <div class="article-card" data-topic="Investigacion" data-views="2100" data-date="2024-03-05">
+                        <img src="img/depresion.jpeg" class="article-image" alt="Depresión">
+                        <div class="article-info">
+                            <div>
+                                <div class="infoImport">
+                                    <span class="article-topic">Investigación</span>
+                                    <span class="article-date"><i class="far fa-calendar-alt"></i> 05/03/2026</span>
+                                </div>
+                                <a href="#" class="article-link">
+                                    <h2 class="article-title">Nuevos hallazgos sobre la depresión</h2>
+                                </a>
+                                <div class="article-meta">
+                                    <span class="article-author">Por <strong>Investigación BrainCare</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="articlesPublicPagination" class="articles-pagination"></div>
+            </div>
+            <!--
+            <aside class="columna-sidebar">
+                <div class="sidebar-card">
+                    <h4 class="sidebar-title"><i class="fas fa-filter"></i> Filtrar Artículos</h4>
+                    <form id="articlesFilterForm">
+                        <div class="filter-group">
+                            <label class="filter-label">Tema</label>
+                            <select class="filter-select" id="articleTopicFilter">
+                                <option value="todos">Todos los temas</option>
+                                <option value="Transtornos">Transtornos</option>
+                                <option value="Recomendaciones">Recomendaciones</option>
+                                <option value="Tratamientos">Tratamientos</option>
+                                <option value="Prevencion">Prevención</option>
+                                <option value="Investigacion">Investigación</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label">Ordenar por</label>
+                            <select class="filter-select" id="articleSortFilter">
+                                <option value="fecha">Más recientes</option>
+                                <option value="vistas">Más vistos</option>
+                            </select>
+                        </div>
+                        <button type="button" class="filter-btn-apply" id="applyArticleFiltersBtn">Actualizar Resultados</button>
+                    </form>
+                </div>
+            </aside>-->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Braincare</h2>
+                <p>En Braincare, te ofrecemos herramientas y consejos para cuidar de tu mente y emociones.</p>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <div class="accordion">
+                        <h3>Servicios</h3>
+                        <a href="./articulos.html">Artículos</a>
+                        <a href="./guias.html">Guías</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Nuestras redes sociales</h3>
+                    <a href="#">Gmail</a>
+                    <a href="https://www.instagram.com/braincare__/?hl=es">Instagram</a>
+                </div>
+                <div class="footer-column">
+                    <h3>La letra pequeña</h3>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Gestión de datos</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footerimg">
+        <img id="footerImg" src="./img/footerimg/footerActulizado.png" alt="Footer" class="footerimgActualizada">
+    </div>
+
+    <div class="extrafooter">
+        <p>© Todos los derechos reservados Braincare 2026</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

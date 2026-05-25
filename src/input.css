@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base styles */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  .site-header {
+    @apply sticky top-0 z-50 bg-bc-bg shadow-md;
+  }
+  
+  .header-container {
+    @apply max-w-[1200px] mx-auto px-4 py-2 flex items-center justify-between;
+  }
+  
+  .brand {
+    @apply flex items-center gap-2 font-bold text-base text-bc-accent;
+  }
+  
+  .menu-toggle {
+    @apply w-10 h-10 rounded-xl border-0 bg-gradient-to-r from-bc-accent to-bc-accent2 hidden md:inline-flex items-center justify-center text-white cursor-pointer;
+  }
+  
+  @media (max-width: 992px) {
+    .menu-toggle {
+      @apply inline-flex;
+    }
+    .nav {
+      @apply hidden !important;
+    }
+  }
+  
+  .nav {
+    @apply inline-flex items-center gap-4;
+  }
+  
+  .nav-link {
+    @apply text-bc-text px-3 py-2 rounded-lg text-sm hover:bg-purple-100 hover:text-bc-accent;
+  }
+  
+  .dropdown {
+    @apply relative;
+  }
+  
+  .dropdown-menu {
+    @apply absolute top-full left-0 min-w-[220px] bg-white border border-gray-200 rounded-xl shadow-xl p-2 hidden;
+  }
+  
+  .dropdown.open .dropdown-menu {
+    @apply block;
+  }
+  
+  .dropdown-item {
+    @apply flex items-center gap-2 px-3 py-2 rounded-lg text-bc-text hover:bg-purple-100 hover:text-bc-accent;
+  }
+  
+  .mobile-panel {
+    @apply fixed inset-0 bg-bc-bg -translate-y-full transition-transform duration-300 z-50 grid grid-rows-[auto_1fr];
+  }
+  
+  .mobile-panel.open {
+    @apply translate-y-0;
+  }
+  
+  .mobile-link {
+    @apply flex items-center gap-2 px-3 py-3 rounded-xl text-bc-text hover:bg-purple-100;
+  }
+  
+  /* Main Layout */
+  .main-layout {
+    @apply min-h-screen pt-5 bg-bc-bg flex items-center justify-between px-10;
+  }
+  
+  .left-content {
+    @apply flex-1 text-center;
+  }
+  
+  .right-image {
+    @apply flex-1 flex justify-center;
+  }
+  
+  .main-title {
+    @apply text-5xl font-bold text-bc-accent2 mb-5 leading-tight;
+  }
+  
+  .subtitle {
+    @apply text-2xl text-gray-600 leading-normal mb-10;
+  }
+  
+  .subtitle .highlight {
+    @apply text-bc-accent2 font-semibold;
+  }
+  
+  .cta-button {
+    @apply bg-yellow-400 text-white text-lg font-semibold py-4 px-10 border-none rounded-full cursor-pointer shadow-lg hover:shadow-xl hover:bg-yellow-500;
+  }
+  
+  /* Carousel */
+  .braincare-seccion-global {
+    @apply py-20 px-5 bg-white text-center overflow-hidden;
+  }
+  
+  .braincare-titulo-principal {
+    @apply text-4xl font-extrabold mb-10 text-bc-text;
+  }
+  
+  .braincare-tab-btn {
+    @apply py-3 px-6 rounded-full border-2 border-bc-accent bg-transparent text-bc-accent font-semibold cursor-pointer transition-all duration-300;
+  }
+  
+  .braincare-tab-btn.activo,
+  .braincare-tab-btn:hover {
+    @apply bg-bc-accent text-white;
+  }
+  
+  .braincare-carrusel-wrap {
+    @apply max-w-[1000px] mx-auto overflow-hidden py-5;
+  }
+  
+  .braincare-slide-item {
+    @apply flex items-center gap-10 opacity-40 transition-opacity duration-500 text-left;
+  }
+  
+  .braincare-slide-item.activo {
+    @apply opacity-100;
+  }
+  
+  .braincare-indicadores {
+    @apply inline-flex justify-center gap-2 mt-10;
+  }
+  
+  .braincare-punto {
+    @apply w-3 h-3 rounded-full bg-gray-300 cursor-pointer transition-all duration-300;
+  }
+  
+  .braincare-punto.activo {
+    @apply bg-bc-accent scale-125;
+  }
+  
+  /* Info boxes */
+  .info-boxes-section {
+    @apply w-full m-0 p-0;
+  }
+  
+  .info-boxes-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 w-full;
+  }
+  
+  .info-box {
+    @apply bg-white border border-gray-200 p-16 min-h-[350px] transition-transform duration-300;
+  }
+  
+  .info-box:last-child {
+    @apply border-b-0;
+  }
+  
+  .info-box h3 {
+    @apply text-xl text-gray-800 mb-8 font-semibold text-center;
+  }
+  
+  .info-box p {
+    @apply text-gray-600 leading-relaxed text-lg text-center;
+  }
+  
+  /* Footer */
+  .footerimg {
+    @apply w-full bg-bc-bg flex justify-center p-0;
+  }
+  
+  /* Buttons */
+  .visitarForo, .visitarCooki {
+    @apply py-4 px-10 rounded-xl border-0 bg-bc-accent tracking-wider text-xl font-semibold transition-all duration-300 shadow-md text-white;
+  }
+  
+  .visitarForo:hover, .visitarCooki:hover {
+    @apply shadow-lg;
+  }
+  
+  .TituloArticulosPsi {
+    @apply text-[#7851C7];
+  }
+  
+  .TituloGuiPsi {
+    @apply text-[#54A9FF];
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .braincare-slide-item {
+    @apply flex-col-reverse p-6 gap-6;
+  }
+}

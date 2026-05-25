@@ -23,6 +23,8 @@ body {
             margin-bottom: 5%;
             background-color: #fef4e5;
             align-items: center;
+         
+          
         }
 
         /* Sección de contenido (lado izquierdo - 50%) */
@@ -151,7 +153,7 @@ body {
     margin: 100px;
     left: 20px;
     top: 80px;
-    z-index: 2;
+    z-index: 2; /* Asegura que el texto esté por encima de la imagen */
 }
 
 .letter1 h3 {
@@ -187,7 +189,7 @@ body {
     position: absolute;
     padding-top: 35%;
     padding-left: 6%;
-    z-index: 2;
+    z-index: 2; /* Asegura que el botón esté por encima de la imagen */
 }
 
 
@@ -1968,7 +1970,7 @@ color: white;
   .braincare-slide-texto button {
     padding: 10px 18px;
   }
-
+}
     
     .contenedor-dos-cards {
         flex-direction: column;

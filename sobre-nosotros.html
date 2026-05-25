@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainCare - Sobre Nosotros</title>
-    <link rel="stylesheet" href="./css/tailwind-output.css">
-    <link rel="stylesheet" href="./css/new-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-footer.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+    <link rel="stylesheet" href="./css/site-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="font-poppins bg-white text-gray-800 overflow-x-hidden">
+<body>
     <header class="site-header">
-        <div class="header-container">
+        <div class="container">
             <a class="brand" href="index.html"><span>Braincare</span></a>
             <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav"><i class="fa-solid fa-bars"></i></button>
             <nav id="siteNav" class="nav">
@@ -37,70 +39,72 @@
     </div>
 
     <main class="container mt-5">
-        <section class="split-section flex flex-col lg:flex-row gap-8 items-center bg-amber-50 p-12">
-            <div class="text-content flex-1">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl mb-8">¿Porque Somos <span class="text-[#9b5eff]">Braincare</span>?</h2>
-                <p class="text-base sm:text-lg leading-relaxed max-w-[65ch] w-full">Aquí puedes colocar todo el texto que necesites. Este contenido se ajustará automáticamente al espacio disponible mientras mantiene la imagen de la derecha en su lugar.</p>
+        <section class="split-section">
+            <div class="text-content">
+                <h2>¿Porque Somos <span>Braincare</span>?</h2>
+                <p>Aquí puedes colocar todo el texto que necesites. Este contenido se ajustará automáticamente al espacio disponible mientras mantiene la imagen de la derecha en su lugar.</p>
             </div>
-            <div class="image-content flex-1">
-                <img src="./img/iconos/about1.png" alt="Descripción de la imagen" class="max-w-full h-auto object-contain">
-            </div>
-        </section>
-
-        <section class="alternate-section flex flex-col lg:flex-row max-w-6xl mx-auto my-16 gap-8 items-center">
-            <div class="alt-content flex-1 p-8">
-                <h2 class="text-2.5xl text-[#9b5eff] mb-6">Braincare</h2>
-                <p class="leading-relaxed">Braincare surgió como idea de proyecto para el evento de CREA-J. Pero el equipo de trabajo quería llevarse lo que aprendían con ellos. Andy y Rich, junto con un pequeño equipo, decidieron hacer que las técnicas de Andy estuvieran disponibles en línea, para que más personas pudieran experimentar los beneficios de la meditación en cualquier momento y lugar.</p>
-            </div>
-            <div class="alt-image flex-1">
-                <img src="./img/iconos/brainTeam.png" alt="Descripción 1" class="max-w-full h-auto object-contain">
+            <div class="image-content">
+                <img src="./img/iconos/about1.png" alt="Descripción de la imagen">
             </div>
         </section>
 
-        <section class="alternate-section flex flex-col-reverse lg:flex-row max-w-6xl mx-auto my-16 gap-8 items-center">
-            <div class="alt-content flex-1 p-8">
-                <h2 class="text-2xl mb-6">Misión</h2>
-                <p class="leading-relaxed">BrainCare tiene una sola misión y es promover la salud mental en personas desde los 12 años hasta los 80 años de edad, a través de una plataforma digital accesible que brinde información confiable, herramientas de apoyo emocional y espacios seguros para la expresión personal.</p>
+        <section class="alternate-section">
+            <div class="alt-content">
+                <h2 class="Braincaretittle">Braincare</h2>
+                <p>Braincare surgió como idea de proyecto para el evento de CREA-J. Pero el equipo de trabajo quería llevarse lo que aprendían con ellos. Andy y Rich, junto con un pequeño equipo, decidieron hacer que las técnicas de Andy estuvieran disponibles en línea, para que más personas pudieran experimentar los beneficios de la meditación en cualquier momento y lugar. Y así fue que Headspace se convirtió en lo que conocemos hoy: meditaciones guiadas, animaciones, artículos y videos, todos con el estilo característico de Headspace.</p>
             </div>
-            <div class="alt-image flex-1">
-                <img src="./img/iconos/misi.png" alt="Descripción 2" class="max-w-full h-auto object-contain">
-            </div>
-        </section>
 
-        <section class="alternate-section flex flex-col lg:flex-row max-w-6xl mx-auto my-16 gap-8 items-center">
-            <div class="alt-content flex-1 p-8">
-                <h2 class="text-2xl mb-6">Visión</h2>
-                <p class="leading-relaxed">Nuestra visión es convertirnos en el principal referente en El Salvador para la salud mental, liderando con una solución innovadora, educativa y humana que se enfoque en la prevención y atención temprana de los trastornos mentales, y que contribuya a desestigmatizar el cuidado emocional y a construir una sociedad más consciente y empática.</p>
-            </div>
-            <div class="alt-image flex-1">
-                <img src="./img/iconos/Visión.png" alt="Descripción 3" class="max-w-full h-auto object-contain">
-            </div>
-        </section>
-
-        <section class="team-section w-full mx-auto p-0">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl text-center mb-6 pt-16 pb-8 text-gray-800">Departamento de Psicología</h2>
-            <p class="text-center max-w-[75ch] w-full mx-auto mb-6 px-4 text-sm sm:text-base">El departamento psicopedagógico del colegio don Bosco se compone de 4 psicólogos para las áreas en las cuales se especializa el colegio y centro escolar San Juan Bosco(parvularia, educación básica, tercer ciclo, bachillerato).</p>
-            <div class="team-hero-image w-full h-auto mb-0 overflow-hidden flex items-center justify-center bg-[#f8f8f8]">
-                <img src="./img/iconos/DepartamentoPsi.png" alt="Nuestro Equipo Completo" class="w-full h-auto max-w-full">
+            <div class="alt-image">
+                <img src="./img/iconos/brainTeam.png" alt="Descripción 1">
             </div>
             
-            <section class="info-boxes-section w-full m-0 p-0">
-                <div class="info-boxes-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 w-full">
-                    <div class="info-box bg-white border border-[#e0e0e0] rounded-none p-16 border-r border-[#e0e0e0] min-h-[350px] transition-transform duration-300">
-                        <h3 class="text-xl text-gray-800 mb-8 font-semibold text-center">Lic.Mauricio Alexander Jovel Salinas</h3>
-                        <p class="text-gray-600 leading-relaxed text-[1.1rem] text-center">Licenciado en psicología con pre especialización en intervención psicoterapéutica en psicología clínica, posgrado en marketing digital.</p>
+        </section>
+
+        <section class="alternate-section reverse ">
+            <div class="alt-content">
+                <h2>Misión</h2>
+                <p>BrainCare tiene una sola misión y es promover la salud mental en personas desde los 12 años hasta los 80 años de edad, a través de una plataforma digital accesible que brinde información confiable, herramientas de apoyo emocional y espacios seguros para la expresión personal.</p>
+            </div>
+            <div class="alt-image">
+                <img src="./img/iconos/misi.png" alt="Descripción 2">
+            </div>
+        </section>
+
+        <section class="alternate-section">
+            <div class="alt-content">
+                <h2>Visión</h2>
+                <p>Nuestra visión es convertirnos en el principal referente en El Salvador para la salud mental, liderando con una solución innovadora, educativa y humana que se enfoque en la prevención y atención temprana de los trastornos mentales, y que contribuya a desestigmatizar el cuidado emocional y a construir una sociedad más consciente y empática.</p>
+            </div>
+            <div class="alt-image">
+                <img src="./img/iconos/Visión.png" alt="Descripción 3">
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2 class="team-title">Departamento de Psicología</h2>
+            <p class="departIvi">El departamento psicopedagógico del colegio don Bosco se compone de 4 psicólogos para las áreas en las cuales se especializa el colegio y centro escolar San Juan Bosco(parvularia, educación básica, tercer ciclo, bachillerato). De igual forma cuenta con el servicio de aulas de terapia del aprendizaje contando con 3 terapistas especializadas.</p>
+            <div class="team-hero-image">
+                <img src="./img/iconos/DepartamentoPsi.png" alt="Nuestro Equipo Completo">
+            </div>
+            
+            <section class="info-boxes-section">
+                <div class="info-boxes-container">
+                    <div class="info-box">
+                        <h3>Lic.Mauricio Alexander Jovel Salinas</h3>
+                        <p>Licenciado en psicología graduado de la Universidad Tecnológica de El Salvador con pre especialización en intervención psicoterapéutica en psicología clínica, posgrado en marketing digital, docente universitario, con experiencia en recursos humanos, psicología clínica y asistencia psicosocial, escritor de literatura psicológica, investigador de historia con formaciones en educación en docencia superior, atención psicológica en adicciones por parte de FOSALUD, formación en ley crecer juntos, diplomado en evaluación de test psicológico para el área clínica. Actualmente se desempeña como psicólogo educativo para el área de tercer ciclo.</p>
                     </div>
-                    <div class="info-box bg-white border border-[#e0e0e0] rounded-none p-16 border-r border-[#e0e0e0] min-h-[350px] border-b border-[#e0e0e0] sm:border-r sm:border-b-0">
-                        <h3 class="text-xl text-gray-800 mb-8 font-semibold text-center">Lic.Lesvia Karina Espinoza</h3>
-                        <p class="text-gray-600 leading-relaxed text-[1.1rem] text-center">Licenciada en psicología con formación en intervención en abuso de sustancias y violencia de género.</p>
+                    <div class="info-box">
+                        <h3>Lic.Lesvia Karina Espinoza de López</h3>
+                        <p>Licenciada en psicología graduada de la universidad tecnológica de El Salvador cuenta con pre especialización en recursos humanos como también formación en áreas como intervención en abuso de sustancias por parte de la universidad tecnológica, intervenciones psicológicas en prevención y abuso de violencia de género, evaluación neuropsicológica para el diagnóstico clínico, primeros auxilios psicológicos y cursos en neuro plasticidad y estrategias educativas para el desarrollo del aprendizaje, psicología clínica y reestructuración cognitiva por parte de la Universidad Nacional de El Salvador. Actualmente se desempeña como psicóloga educativa de nivel parvularia y educación básica, también como psicóloga clínica e instrucción de catedra universitaria.</p>
                     </div>
-                    <div class="info-box bg-white border border-[#e0e0e0] rounded-none p-16 border-r border-[#e0e0e0] min-h-[350px] border-b border-[#e0e0e0] lg:border-r lg:border-b-0">
-                        <h3 class="text-xl text-gray-800 mb-8 font-semibold text-center">Lic.Patricia Castillo</h3>
-                        <p class="text-gray-600 leading-relaxed text-[1.1rem] text-center">Licenciada con experiencia en psicología educativa y clínica, formada en primeros auxilios.</p>
+                    <div class="info-box">
+                        <h3>Lic.Patricia Castillo</h3>
+                        <p>Licenciada en psicología graduada de la universidad Francisco Gavidia cuenta con curso de formación pedagógica para profesionales universitarios de la Universidad de El Salvador, diplomado en valores morales de la universidad católica de occidente, avalada para ejercer la profesión en psicología en New York, formada en primeros auxilios, formación en uso y gestión de Google classroom  - Google suite for education, diplomado en áreas de neurociencias. Cuenta con experiencia en psicóloga en el área de formación profesional, psicología educativa, docente de bachillerato para el área de orientación para la vida, ha participado en el proceso de orientación vocacional y selección de personal, área de atención clínica.</p>
                     </div>
-                    <div class="info-box bg-white border border-[#e0e0e0] rounded-none p-16 min-h-[350px]">
-                        <h3 class="text-xl text-gray-800 mb-8 font-semibold text-center">Lic.Francisco José Hernández</h3>
-                        <p class="text-gray-600 leading-relaxed text-[1.1rem] text-center">Licenciado en psicología con especialización en técnicas de intervención psicológica.</p>
+                    <div class="info-box">
+                        <h3>Lic.Francisco José Hernández Santos.</h3>
+                        <p>Licenciado en psicología graduado de la universidad Francisco Gavidia con especialización en técnicas y herramientas para la profesión en psicología cuenta con diplomados en áreas como herramientas para construir un aula inclusiva y efectiva de la universidad católica de argentina, técnicas de intervención psicológica de FUNPRES, formación en ley crecer juntos. Cuenta con experiencia en área de psicológica clínica y educativa en los niveles de primaria, tercer ciclo y bachillerato.</p>
                     </div>
                 </div>
             </section>

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainCare - Registro</title>
-    <link rel="stylesheet" href="./css/tailwind-output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/site-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="font-poppins auth-body bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('./img/Bosque1.png');">
+<body class="auth-body" style="background-image: url('./img/Bosque1.png');">
     <header class="site-header">
-        <div class="header-container">
+        <div class="container">
             <a class="brand" href="index.html"><span>Braincare</span></a>
             <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav"><i class="fa-solid fa-bars"></i></button>
             <nav id="siteNav" class="nav">
@@ -37,35 +38,35 @@
         </div>
     </div>
 
-    <div class="auth-container flex justify-center w-full mt-5">
-        <div class="auth-card w-full max-w-xl mx-5 my-5">
-            <div class="auth-card-body p-8">
-                <h2 class="auth-title text-center mb-6 text-5xl font-semibold text-bc-primary">Crear tu perfil</h2>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-card-body">
+                <h2 class="auth-title">Crear tu perfil</h2>
                 <form id="registerForm">
-                    <div class="auth-form-group mb-4">
-                        <input type="text" id="name" class="auth-input block w-full px-4 py-3.5 text-base text-[#495057] bg-[#DCD7E7] border border-[#3C3C3C] rounded" placeholder="Nombre" required minlength="2">
+                    <div class="auth-form-group">
+                        <input type="text" id="name" class="auth-input" placeholder="Nombre" required minlength="2">
                     </div>
-                    <div class="auth-form-group mb-4">
-                        <input type="email" id="email" class="auth-input block w-full px-4 py-3.5 text-base text-[#495057] bg-[#DCD7E7] border border-[#3C3C3C] rounded" placeholder="Correo electrónico" required>
+                    <div class="auth-form-group">
+                        <input type="email" id="email" class="auth-input" placeholder="Correo electrónico" required>
                     </div>
-                    <div class="auth-form-group mb-4 relative">
-                        <input type="password" id="password" class="auth-input block w-full px-4 py-3.5 text-base text-[#495057] bg-[#DCD7E7] border border-[#3C3C3C] rounded" placeholder="Contraseña" required minlength="8">
-                        <span class="password-toggle absolute right-4 top-3.5 cursor-pointer" onclick="togglePassword('password')">
+                    <div class="auth-form-group" style="position: relative;">
+                        <input type="password" id="password" class="auth-input" placeholder="Contraseña" required minlength="8">
+                        <span class="password-toggle" onclick="togglePassword('password')" style="position: absolute; right: 15px; top: 15px; cursor: pointer;">
                             <i class="fas fa-eye"></i>
                         </span>
                     </div>
-                    <div class="auth-form-group mb-4 relative">
-                        <input type="password" id="confirmPassword" class="auth-input block w-full px-4 py-3.5 text-base text-[#495057] bg-[#DCD7E7] border border-[#3C3C3C] rounded" placeholder="Confirmar contraseña" required minlength="8">
-                        <span class="password-toggle absolute right-4 top-3.5 cursor-pointer" onclick="togglePassword('confirmPassword')">
+                    <div class="auth-form-group" style="position: relative;">
+                        <input type="password" id="confirmPassword" class="auth-input" placeholder="Confirmar contraseña" required minlength="8">
+                        <span class="password-toggle" onclick="togglePassword('confirmPassword')" style="position: absolute; right: 15px; top: 15px; cursor: pointer;">
                             <i class="fas fa-eye"></i>
                         </span>
                     </div>
                     <div class="auth-button-container">
-                        <button type="submit" class="auth-button bg-bc-primary w-full text-white font-bold border-none py-2.5 px-5 text-xl rounded-md cursor-pointer shadow-md active:translate-y-0.5">Registrarse</button>
+                        <button type="submit" class="auth-button">Registrarse</button>
                     </div>
                 </form>
-                <div class="auth-links mt-4 text-center">
-                    <p>¿Ya tienes una cuenta? <a href="login.html" class="text-bc-primary font-bold">Iniciar sesión</a></p>
+                <div class="auth-links">
+                    <p>¿Ya tienes una cuenta? <a href="login.html" style="color: var(--primary); font-weight: bold;">Iniciar sesión</a></p>
                 </div>
             </div>
         </div>

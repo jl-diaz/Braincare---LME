@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrainCare - Guías</title>
-    <link rel="stylesheet" href="./css/tailwind-output.css">
-    <link rel="stylesheet" href="./css/new-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-footer.css">
+    <link rel="stylesheet" href="./css/site-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="font-poppins bg-white text-gray-800 overflow-x-hidden">
+<body>
     <header class="site-header">
-        <div class="header-container">
+        <div class="container">
             <a class="brand" href="index.html"><span>Braincare</span></a>
             <button class="menu-toggle" aria-expanded="false" aria-controls="siteNav"><i class="fa-solid fa-bars"></i></button>
             <nav id="siteNav" class="nav">
@@ -36,18 +37,18 @@
         </div>
     </div>
 
-    <div class="guides-hero bg-[#35053c] relative py-12 px-6 text-center pt-5 mb-12">
-        <h1 class="text-2xl font-extrabold text-white mb-0.5">Biblioteca de Guías</h1>
-        <p class="text-base text-white max-w-3xl mx-auto mb-8">Recursos profesionales, ejercicios prácticos y lectura especializada para tu bienestar mental.</p>
+    <div class="guides-hero">
+        <h1>Biblioteca de Guías</h1>
+        <p>Recursos profesionales, ejercicios prácticos y lectura especializada para tu bienestar mental.</p>
         
-        <div class="hero-search-wrapper max-w-lg mx-auto relative">
+        <div class="hero-search-wrapper">
             <i class="fas fa-search hero-search-icon"></i>
             <input type="text" id="guidesPublicSearchInput" class="hero-search-input" placeholder="Buscar guías por título, tema o autor...">
         </div>
     </div>
 
-    <div class="guides-layout max-w-[1200px] mx-auto px-6 pb-16 grid grid-cols-[1fr_280px] gap-12 items-start">
-        <aside class="guides-sidebar sticky top-8">
+    <div class="guides-layout">
+        <aside class="guides-sidebar">
             <div class="sidebar-card">
                 <h4 class="sidebar-title"><i class="fas fa-filter"></i> Filtrar Guías</h4>
                 <form id="guidesFilterForm">
@@ -74,7 +75,7 @@
         </aside>
 
         <main class="guides-main">
-            <div class="guides-grid grid grid-cols-3 gap-8" id="guidesContainer">
+            <div class="guides-grid" id="guidesContainer">
                 <!-- Guía 1 -->
                 <article class="guide-card" data-topic="Recomendaciones" data-views="1200" data-downloads="450" data-date="2024-03-15">
                     <a href="#" class="btn-view-guide">
